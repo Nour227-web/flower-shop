@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رونق | الباقات</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.jpg" alt="رونق">
+        </a>
+
+        <!-- Mobile Button -->
+        <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="فتح القائمة">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        الرئيسية
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="page1.html">
+                        الزهور
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="page2.html">
+                        الباقات
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="page3.html">
+                        العروض
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="connect.html">
+                        تواصل معنا
+                    </a>
+                </li>
+
+                <!-- Shopping Cart -->
+                <li class="nav-item">
+                    <a class="nav-link cart-link" href="cart.html">
+                        🛒 عربة التسوق
+                        <span id="cartCount" class="cart-count">0</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    </nav>
+
+    <!-- ================= BOUQUETS ================= -->
+
+    <section class="flowers-section">
+    <div class="container">
+
+        <div class="section-title">
+
+            <h1>باقاتنا</h1>
+
+            <p>
+                اختر باقتك المفضلة وأضفها إلى عربة التسوق
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- Bouquet 1 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="flower-card">
+
+                    <img src="images/b1.jpg" alt="باقة الحب">
+
+                    <div class="flower-info">
+
+                        <h3>باقة الحب</h3>
+
+                        <p>
+                            باقة رومانسية من أجمل الزهور الحمراء، مناسبة للتعبير عن الحب والمشاعر.
+                        </p>
+
+                        <h4>150 جنيه</h4>
+
+                        <div class="quantity">
+
+                            <label>الكمية:</label>
+
+                            <input type="number"
+                                min="1"
+                                value="1"
+                                id="quantityB1">
+
+                        </div>
+
+                        <button class="add-cart"
+                            onclick="addToCart('باقة الحب', 150, 'quantityB1')">
+
+                            🛒 أضف إلى السلة
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bouquet 2 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="flower-card">
+
+                    <img src="images/b2.jpg" alt="باقة الربيع">
+
+                    <div class="flower-info">
+
+                        <h3>باقة الربيع</h3>
+
+                        <p>
+                            تشكيلة مبهجة من الزهور الملونة تضيف البهجة والجمال لكل مناسبة.
+                        </p>
+
+                        <h4>180 جنيه</h4>
+
+                        <div class="quantity">
+
+                            <label>الكمية:</label>
+
+                            <input type="number"
+                                min="1"
+                                value="1"
+                                id="quantityB2">
+
+                        </div>
+
+                        <button class="add-cart"
+                            onclick="addToCart('باقة الربيع', 180, 'quantityB2')">
+
+                            🛒 أضف إلى السلة
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bouquet 3 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="flower-card">
+
+                    <img src="images/b3.jpg" alt="باقة الياسمين">
+
+                    <div class="flower-info">
+
+                        <h3>باقة الياسمين</h3>
+
+                        <p>
+                            باقة ناعمة وعطرة من أجمل أزهار الياسمين، مثالية للهدايا.
+                        </p>
+
+                        <h4>165 جنيه</h4>
+
+                        <div class="quantity">
+
+                            <label>الكمية:</label>
+
+                            <input type="number"
+                                min="1"
+                                value="1"
+                                id="quantityB3">
+
+                        </div>
+
+                        <button class="add-cart"
+                            onclick="addToCart('باقة الياسمين', 165, 'quantityB3')">
+
+                            🛒 أضف إلى السلة
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bouquet 4 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="flower-card">
+
+                    <img src="images/b4.jpg" alt="باقة الورد الأبيض">
+
+                    <div class="flower-info">
+
+                        <h3>باقة النقاء</h3>
+
+                        <p>
+                            باقة أنيقة من الزهور البيضاء ترمز إلى النقاء والصفاء.
+                        </p>
+
+                        <h4>190 جنيه</h4>
+
+                        <div class="quantity">
+
+                            <label>الكمية:</label>
+
+                            <input type="number"
+                                min="1"
+                                value="1"
+                                id="quantityB4">
+
+                        </div>
+
+                        <button class="add-cart"
+                            onclick="addToCart('باقة النقاء', 190, 'quantityB4')">
+
+                            🛒 أضف إلى السلة
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bouquet 5 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="flower-card">
+
+                    <img src="images/b5.jpg" alt="باقة السعادة">
+
+                    <div class="flower-info">
+
+                        <h3>باقة السعادة</h3>
+
+                        <p>
+                            مجموعة رائعة من الزهور الصفراء والمشرقة لنشر الطاقة الإيجابية.
+                        </p>
+
+                        <h4>175 جنيه</h4>
+
+                        <div class="quantity">
+
+                            <label>الكمية:</label>
+
+                            <input type="number"
+                                min="1"
+                                value="1"
+                                id="quantityB5">
+
+                        </div>
+
+                        <button class="add-cart"
+                            onclick="addToCart('باقة السعادة', 175, 'quantityB5')">
+
+                            🛒 أضف إلى السلة
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bouquet 6 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="flower-card">
+
+                    <img src="images/b6.jpg" alt="باقة التوليب">
+
+                    <div class="flower-info">
+
+                        <h3>باقة التوليب</h3>
+
+                        <p>
+                            باقة أنيقة من زهور التوليب بألوان جذابة تضيف لمسة من الرقي.
+                        </p>
+
+                        <h4>220 جنيه</h4>
+
+                        <div class="quantity">
+
+                            <label>الكمية:</label>
+
+                            <input type="number"
+                                min="1"
+                                value="1"
+                                id="quantityB6">
+
+                        </div>
+
+                        <button class="add-cart"
+                            onclick="addToCart('باقة التوليب', 220, 'quantityB6')">
+
+                            🛒 أضف إلى السلة
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bouquet 7 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="flower-card">
+
+                    <img src="images/b7.jpg" alt="باقة الأوركيد">
+
+                    <div class="flower-info">
+
+                        <h3>باقة الأوركيد</h3>
+
+                        <p>
+                            باقة فاخرة من الأوركيد مناسبة للمناسبات الخاصة والهدايا المميزة.
+                        </p>
+
+                        <h4>280 جنيه</h4>
+
+                        <div class="quantity">
+
+                            <label>الكمية:</label>
+
+                            <input type="number"
+                                min="1"
+                                value="1"
+                                id="quantityB7">
+
+                        </div>
+
+                        <button class="add-cart"
+                            onclick="addToCart('باقة الأوركيد', 280, 'quantityB7')">
+
+                            🛒 أضف إلى السلة
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bouquet 8 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="flower-card">
+
+                    <img src="images/b8.jpg" alt="باقة الورد الوردي">
+
+                    <div class="flower-info">
+
+                        <h3>باقة الرومانسية</h3>
+
+                        <p>
+                            باقة ناعمة من الزهور الوردية، مثالية للمناسبات الرومانسية.
+                        </p>
+
+                        <h4>210 جنيه</h4>
+
+                        <div class="quantity">
+
+                            <label>الكمية:</label>
+
+                            <input type="number"
+                                min="1"
+                                value="1"
+                                id="quantityB8">
+
+                        </div>
+
+                        <button class="add-cart"
+                            onclick="addToCart('باقة الرومانسية', 210, 'quantityB8')">
+
+                            🛒 أضف إلى السلة
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bouquet 9 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="flower-card">
+
+                    <img src="images/b9.jpg" alt="باقة الأقحوان">
+
+                    <div class="flower-info">
+
+                        <h3>باقة البهجة</h3>
+
+                        <p>
+                            تشكيلة مبهجة من الأقحوان والزهور الملونة لإضفاء لمسة من الفرح.
+                        </p>
+
+                        <h4>160 جنيه</h4>
+
+                        <div class="quantity">
+
+                            <label>الكمية:</label>
+
+                            <input type="number"
+                                min="1"
+                                value="1"
+                                id="quantityB9">
+
+                        </div>
+
+                        <button class="add-cart"
+                            onclick="addToCart('باقة البهجة', 160, 'quantityB9')">
+
+                            🛒 أضف إلى السلة
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bouquet 10 -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="flower-card">
+
+                    <img src="images/b10.jpg" alt="باقة الفاوانيا">
+
+                    <div class="flower-info">
+
+                        <h3>باقة الفاوانيا</h3>
+
+                        <p>
+                            باقة فاخرة من الفاوانيا ذات البتلات الناعمة، مثالية للهدايا الراقية.
+                        </p>
+
+                        <h4>300 جنيه</h4>
+
+                        <div class="quantity">
+
+                            <label>الكمية:</label>
+
+                            <input type="number"
+                                min="1"
+                                value="1"
+                                id="quantityB10">
+
+                        </div>
+
+                        <button class="add-cart"
+                            onclick="addToCart('باقة الفاوانيا', 300, 'quantityB10')">
+
+                            🛒 أضف إلى السلة
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+
+                    <img src="images/logo.jpg" alt="شعار متجر الزهور">
+
+                    <p>
+                        لمسة من الجمال لكل لحظة
+                    </p>
+
+                </div>
+
+
+                <div class="footer-contact">
+
+                    <h5>تواصل معنا</h5>
+
+                    <a href="https://wa.me/201030573340"
+                        target="_blank"
+                        class="footer-link">
+
+                        <span>WhatsApp</span>
+
+                        <span>+20 10 30573340</span>
+
+                    </a>
+                      <a href="mailto:your@email.com" class="footer-link">
+                            <span>Email</span>
+                            <span>ron@email.com</span>
+
+                        </a>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 متجر الزهور — جميع الحقوق محفوظة
+                </p>
+
+            </div>
+
+        </div>
+        
+
+        </footer>
+
+        <script>
+
+            // Get cart from localStorage
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            updateCartCount();
+
+
+            function addToCart(name, price, quantityId) {
+
+                let quantity = parseInt(
+                    document.getElementById(quantityId).value
+                );
+
+
+                if (quantity < 1 || isNaN(quantity)) {
+
+                    quantity = 1;
+
+                }
+
+
+                let existingProduct = cart.find(
+                    item => item.name === name
+                );
+
+
+                if (existingProduct) {
+
+                    existingProduct.quantity += quantity;
+
+                } else {
+
+                    cart.push({
+
+                        name: name,
+
+                        price: price,
+
+                        quantity: quantity
+
+                    });
+
+                }
+
+
+                localStorage.setItem(
+                    "cart",
+                    JSON.stringify(cart)
+                );
+
+
+                updateCartCount();
+
+
+                alert("تمت إضافة الباقة إلى عربة التسوق 🌸");
+
+            }
+
+
+            function updateCartCount() {
+
+                let count = cart.reduce(
+                    (total, item) => total + item.quantity,
+                    0
+                );
+
+
+                document.getElementById("cartCount").textContent = count;
+
+            }
+
+    </script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+</html>
